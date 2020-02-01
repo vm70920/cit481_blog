@@ -5,6 +5,7 @@ date:   2020-01-31 18:00:18 -0000
 categories: jekyll update
 ---
 
+Kubernetes is an open source platform that automates Linux container operations. It eliminates many of the manual processes involved in deploying and scaling containerized applications. In other words, users cluster together groups of hosts running Linux containers, and Kubernetes helps you easily and efficiently manage those clusters. Kubernetes clusters can span hosts across public, private, or hybrid clouds. For this reason, Kubernetes is an ideal platform for hosting cloud-native applications that require rapid scaling.
 
 
 
