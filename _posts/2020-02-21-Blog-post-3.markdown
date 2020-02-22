@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Blog 3: Database migration to AWS"
+date:   2020-02-21 18:00:18 -0000
+categories: jekyll update
+---
+
+<h3>Database migration to AWS</h3>
+
+Modern applications contain large data volumes, complicated business logic, complex data types, and data mining features. Migration form on-site based database to cloud database will help to reduce costs: lower license costs, easy automation, elasticity of resources. For instance, migrating from legacy database engines to modern engines will allow to compose more meaningful queries and get more precise data. Another reason would be database replication for easy access of users nationwide or worldwide. On-premises database maintenance and management requires room space, staff, hardware, software. All these may result in database downtime risk, high costs, human error, malicious activities, etc. As an alternative AWS offers database technologies (AWS RDS or Amazon DynamoDB). Major features are low cost, minimal downtime, simplicity of usage, support of widely used database engines, reliability.
+
+
+
+
+
+
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
