@@ -46,19 +46,19 @@ Name must be globally unique and DNS compliant. Name can contain lowercase lette
 To list all buckets:
 
 
-        $ aws s3 ls
+    $ aws s3 ls
 
 
 To list all objects and folders in the bucket:
 
 
-		    $ aws s3 ls s3://bucket_name
+    $ aws s3 ls s3://bucket_name
 
 
 To list all objects and folders following specific path:
 
 
-		    $ aws s3 ls s3://bucket_name/path/
+    $ aws s3 ls s3://bucket_name/path/
 
 
 <h4>Delete Bucket</h4>
@@ -66,13 +66,13 @@ To list all objects and folders following specific path:
 To remove empty bucket:
 
 
-		    $ aws s3 rb s3://bucket_name
+    $ aws s3 rb s3://bucket_name
 
 
 To remove non-empty bucket (except bucket that contains previously deleted, but retained object:
 
 
-		    $ aws s3 rb s3://bucket_name  force
+    $ aws s3 rb s3://bucket_name  force
 
 
 
