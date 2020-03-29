@@ -9,9 +9,10 @@ categories: jekyll update
 
 Amazon Simple Storage Service is a service to store objects. Service offers scalability, security, high performance, and availability. Stored objects may be a websites, mobile applications, archives, big data analytics, etc. Amazon S3 service designed for 99.9999999999% of durability. Amazon S3 service offers variety of storage classes to meet all needs of different use cases.
 
-<h2>AWS S3 Storage Classes
+<h2>AWS S3 Storage Classes</h2>
 
 <h3>General Purpose: AWS S3 Standard</h3>
+
 S3 Standard offers high availability, durability, and performance storage for frequently accessed data. This type of storage features low latency and high throughput. Use cases may include dynamic websites, cloud applications, mobile and gaming applications, big data analytics, and content distribution.
 Key features:
 -	Low latency
