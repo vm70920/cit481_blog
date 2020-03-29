@@ -35,7 +35,9 @@ Allows to manage Amazon S3 buckets and objects by using high-level AWS S3 comman
 <h4>Create a Bucket</h4>
  To create a S3 bucket use following command:
 
+
         $ aws s3 mb s3://globally_unique_name
+
 
 Name must be globally unique and DNS compliant. Name can contain lowercase letters, numbers, hyphens, and periods. Name can start and end only with letter of number. Also, name cannot contain a period next to another period, or hyphen.
 
@@ -43,14 +45,18 @@ Name must be globally unique and DNS compliant. Name can contain lowercase lette
 
 To list all buckets:
 
+
         $ aws s3 ls
 
 
 To list all objects and folders in the bucket:
 
+
 		    $ aws s3 ls s3://bucket_name
 
+
 To list all objects and folders following specific path:
+
 
 		    $ aws s3 ls s3://bucket_name/path/
 
@@ -59,9 +65,12 @@ To list all objects and folders following specific path:
 
 To remove empty bucket:
 
+
 		    $ aws s3 rb s3://bucket_name
 
+
 To remove non-empty bucket (except bucket that contains previously deleted, but retained object:
+
 
 		    $ aws s3 rb s3://bucket_name  --force
 
