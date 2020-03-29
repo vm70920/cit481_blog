@@ -72,7 +72,7 @@ To remove empty bucket:
 To remove non-empty bucket (except bucket that contains previously deleted, but retained object:
 
 
-		    $ aws s3 rb s3://bucket_name  --force
+		    $ aws s3 rb s3://bucket_name  force
 
 
 
