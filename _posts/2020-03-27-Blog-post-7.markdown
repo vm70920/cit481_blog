@@ -5,7 +5,7 @@ date:   2020-03-27 18:00:18 -0000
 categories: jekyll update
 ---
 
-<h1>Vagrant</h1>
+<h2>Vagrant</h2>
 
 Vagrant is an open source software to manage portable virtual environments for software development, such as VirtualBox, Hyper-V, VMware, AWS, Docker containers. The main goal of the tool is to increase development productivity by simplify software configuration management. Written in Ruby language.
 
@@ -13,7 +13,7 @@ Building blocks of Vagrant are “Provisioners” and “Providers”. Provision
 
 Vagrant acts as a wrapper on virtualization software, helps interaction between user and providers, and automates process (Chef or Puppet). Thus user does not need to interact directly with virtualization software. Machine and software requirements are written in a “vagrantfile” and used to crate development ready virtual box. File with Vagrant environment box has a .box format and extension, and can be copied and used to replicate the same environment.
 
-<h2>Installing Vagrant on Ubuntu</h2>
+<h1>Installing Vagrant on Ubuntu</h1>
 
 Install VirtualBox:
 
