@@ -6,6 +6,7 @@ categories: jekyll update
 ---
 
 <h3>AWS: Identity and Access Management</h3>
+
 AWS Identity and Access Management allows to manage secure access to AWS services by creating and managing users, groups and manage permissions to them. IAM users can be:
 -	Administrator who will have access to manage available AWS resources
 -	End users who will access to resources and content in AWS
@@ -15,9 +16,47 @@ Process of creating IAM user:
 
     Create User -> Give credentials -> Assign user to group -> Provide user login profile (optional)
 
+Create a new IAM using AWS CLI:
+
+    $ aws iam create-user --user-name User1
+
+Create password for IAM user (optional, but strongly recommended). Preferable method is by using json file that contains password. To create json file:
+
+    $ aws iam create-login-profile –generate-cli-skeleton > create-login-profile.json
+
+Output:
+
+    {
+        "UserName": "user_name",
+        "Password": "user_password",
+        "PasswordResetRequired": true
+    }
+
+Next create password for IAM user:
+
+    $ aws iam create-login-profile –cli-input-json file://create-login-profile.json
+
+Output:
+
+    {
+ 	 	    "LoginProfile": {
+       	    "UserName": "user_name",
+  			    "CreateDate": "2020-01-01T20:55:40.274Z",
+      			"PasswordResetRequired": true
+   		       }
+    }
+
+
+In case if password is not consistent with account policy command returns error: PasswordPolicyViolation.
+To change existing password for user:
+
+    $ aws iam update-login-profile –user-name user_name –password <password>
+
+
 Group will combine multiple IAM users and allows to assign permissions, roles, or attach access control policies to them. Single user may belong to multiple groups. Also groups can not belong to other groups, cannot access web services directly, and groups don’t have security credentials.
 
 IAM roles purpose is to provide access to users and services for specific AWS resources, that normally inaccessible to organization’s users. IAM users or services can be provided with a role to obtain temporary credentials allowing to make AWS API calls. Usability of the role allows to avoid assignment of credentials for a long-term, or defining permissions to users that requesting access to resource.
+
 
 
 
