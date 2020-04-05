@@ -11,13 +11,13 @@ AWS RDS (relational database service) allows to set up and operate relational da
 
 To create database instance:
 
-  aws rds create-db-instance \
-    --allocated-storage 35 --db-instance-class db.m1.small \
- 	  --db-instance-identifier db_instance_name \
- 	  --engine mysql \
-    --enable-cloudwatch-logs-exports '["audit","error","general","slowquery"]' \
-    --master-username master \
-    --master-user-password master_password
+    aws rds create-db-instance \
+      --allocated-storage 35 --db-instance-class db.m1.small \
+ 	    --db-instance-identifier db_instance_name \
+ 	    --engine mysql \
+      --enable-cloudwatch-logs-exports '["audit","error","general","slowquery"]' \
+      --master-username master \
+      --master-user-password master_password
 
 Create database security group to control access to database instance.
 
@@ -33,6 +33,7 @@ To stop AWS RDS instance:
 To start AWS RDS instance (the one that was previously stopped by command stop-db-instance):
 
   aws rds start-db-instance --db-instance-identifier db_instance_name
+
 
 To reboot database instance, for example if database modifications were made, or group parameters were changed:
 
