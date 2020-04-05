@@ -9,7 +9,13 @@ categories: jekyll update
 
 Kubernetes master (control pane) contains following components:
 
-- API server: used for internal and external communication via REST API. All Kubernetes objects are exposed as REST resources. Client sends request to REST resource, Kubernetes API server processing it, validating, and performing CRUD (create, read, update and delete) operations.
+- API server: used for internal and external communication via REST API. All Kubernetes objects are exposed as REST resources. Client sends request to REST resource, Kubernetes API server processing it, validating, and performing CRUD (create, read, update and delete) operations on Kubernetes objects.
+
+- Cluster State Store: storage instance to store state of Kubernetes objects in the system. The CSS has a watch functionality - allows to all components be quickly notified if any changes were made to Kubernetes objects.
+
+- Controller Manager: this component runs controllers. Controllers run loops and monitor Kubernetes cluster state and state of Kubernetes objects (if modification notified, controllers responsible for specific actions to make actual state consistent with abstract (desired) state).
+
+- Scheduler: component responsible for allocating physical resources necessary to run the application.
 
 <...>
 
