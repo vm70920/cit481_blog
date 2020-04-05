@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog 1: Kubernetes (continue)"
+title:  "Blog 1: Kubernetes (continued)"
 date:   2020-02-07 18:00:18 -0000
 categories: jekyll update
 ---
@@ -17,12 +17,7 @@ Kubernetes master (control pane) contains following components:
 
 - Scheduler: component responsible for allocating physical resources necessary to run the application.
 
-<...>
 
-
-<h3>AWS Config use</h3>
-
-<...>
 
 
 
