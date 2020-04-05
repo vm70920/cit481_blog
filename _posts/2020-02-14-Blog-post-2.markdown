@@ -42,10 +42,10 @@ To reboot database instance, for example if database modifications were made, or
 
 In case if one or more database configuration parameters need to be modified, use:
 
-	aws rds modify-db-instance \
-		--db-instance-identifier db_instance_name \
-		--db-instance-class db.m1.large \
-		--apply-immediately
+  aws rds modify-db-instance \
+    --db-instance-identifier db_instance_name \
+    --db-instance-class db.m1.large \
+    --apply-immediately
 
 
 
