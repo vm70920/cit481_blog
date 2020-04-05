@@ -15,11 +15,15 @@ Some applications operates on multiple containers that deployed across multiple 
 
 <h3>Kubernetes principles:</h3>
 
-Portable - Kubernetes runs across variouse environments with consistent behaviour.
-General purpose - Kubernetes main focuse is deployment of microservices and cloud based applications, however any type of workload can be deployed, including but not limited to stateless and stateful apps, legacy single instance monolithinc apps, etc.
+Portable - Kubernetes runs across various environments with consistent behavior.
+
+General purpose - Kubernetes main focus is deployment of microservices and cloud based applications, however any type of workload can be deployed, including but not limited to stateless and statefull apps, legacy single instance monolithic apps, etc.
+
 Flexible - Kubernetes allows to substitute build in functionality parts with pluggable components, layers, and with custom solutions.
-Extensible - allows addition of new functionalities and capabilities when nesessary.
-Automatable - with proper configuration, apps deployed via Kubernetes will heal itself and scale withour users intervention.
+
+Extensible - allows addition of new functionalities and capabilities when necessary.
+
+Automatable - with proper configuration, apps deployed via Kubernetes will heal itself and scale without users intervention.
 
 <h3>Kubernetes architecture</h3>
 
