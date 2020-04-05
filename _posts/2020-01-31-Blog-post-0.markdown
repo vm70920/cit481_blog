@@ -13,6 +13,18 @@ Kubernetes is an open source platform that automates Linux container operations.
 
 Some applications operates on multiple containers that deployed across multiple server hosts and required multilayered security for containers. Kubernetes provides tools for orchestration and management of capabilities required to deploy containers to achieve desired functionality. Kubernetes allows to build applications that involve multiple containers, schedule activities for containers across a cluster, scale containers, and monitor health of containers. As well Kubernetes integrates with networking, storage, security, and many other services to provide a comprehensive container infrastructure.
 
+<h3>Kubernetes principles:</h3>
+
+Portable - Kubernetes runs across variouse environments with consistent behaviour.
+General purpose - Kubernetes main focuse is deployment of microservices and cloud based applications, however any type of workload can be deployed, including but not limited to stateless and stateful apps, legacy single instance monolithinc apps, etc.
+Flexible - Kubernetes allows to substitute build in functionality parts with pluggable components, layers, and with custom solutions.
+Extensible - allows addition of new functionalities and capabilities when nesessary.
+Automatable - with proper configuration, apps deployed via Kubernetes will heal itself and scale withour users intervention.
+
+<h3>Kubernetes architecture</h3>
+
+
+
 
 
 
