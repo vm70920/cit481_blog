@@ -27,7 +27,7 @@ Automatable - with proper configuration, apps deployed via Kubernetes will heal 
 
 <h3>Kubernetes architecture</h3>
 
-
+High level architecture components are master system and workers. Master controls workers and runs apps on workers. Desired state of the cluster described in the abstract object (record of intent). Kubernetes constantly checks health of the cluster to ensure that current state stays in accordance with desired state. An external client able to connect to master to get information about current state of cluster, or to change state of the cluster. Whenever physical state of Kubernetes cluster needs updates or modifications, client needs to update abstract Kubernetes object (desired state).
 
 
 
