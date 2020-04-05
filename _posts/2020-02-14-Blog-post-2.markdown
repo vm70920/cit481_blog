@@ -11,7 +11,7 @@ AWS RDS (relational database service) allows to set up and operate relational da
 
 To create database instance:
 
-aws rds create-db-instance \
+    aws rds create-db-instance \
    		 --allocated-storage 35 --db-instance-class db.m1.small \
    		 --db-instance-identifier db_instance_name \
    		 --engine mysql \
@@ -21,13 +21,13 @@ aws rds create-db-instance \
 
 Create database security group to control access to database instance.
 
-aws rds create-db-security-group \
-		--db-security-group-name db_sgroup \
-		--db-security-group-description "Database Security Group"
+    aws rds create-db-security-group \
+		    --db-security-group-name db_sgroup \
+		    --db-security-group-description "Database Security Group"
 
 To stop AWS RDS instance:
 
-aws rds stop-db-instance --db-instance-identifier db_instance_name
+    aws rds stop-db-instance --db-instance-identifier db_instance_name
 
 
 To start AWS RDS instance (the one that was previously stopped by command stop-db-instance):
