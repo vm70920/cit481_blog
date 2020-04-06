@@ -19,13 +19,27 @@ Kubernetes master (control pane) contains following components:
 
 <h3>Kubernetes worker: components</h3>
 
-The Kubernetes worker (nodes) instances main functionality is to process instructions from master and execute them on node. Key components are:
+The Kubernetes worker (nodes) instances main functionality is to process instructions from master and execute them on node. Key components of worker instances are:
 
 - Kubelet: monitoring that scheduled by master containers on specific node are running and healthy.
 
 - Container runtime: software responsible for running containers. Each node uses container runtime to run scheduled by master containerized apps. Non containerized apps not supported by Kubernetes.
 
 - Kube proxy: maintains network rules on worker and does connection forwarding.
+
+<h3>Kubernetes client (external)</h3>
+
+In general any application with will defined REST API can communicate with API server. The most common choice is Kubectl. Kubectl is command line tool used by end-user to manage application deployment. Commands can be executed via terminal. Issued command will be translated into API call and sent to API server on Kubernetes master.
+
+<h3>Kubernetes Objects</h3>
+
+There are large number of Kubernetes abstract objects. Here are examples of some of them:
+
+- Pod: group of one or more containers. Pod is smallest deployable units created and managed by Kubernetes. Pod is the place where app code (implemented by end-user) runs. Pods are volatile, thus Pod's IP address is not  reliable for access app functionality carried by pod. Kubernetes recomends to use Service to access business functionality.
+
+- Service: abstraction that defines policies to access pods. Kubernetes Service has stable IP address (unlike actual pod). Service keeps track of all pods and identifies targeted pods. Server receives user's request for specific functionality, and redirects request to specific active pod's IP address.
+
+- 
 
 
 
