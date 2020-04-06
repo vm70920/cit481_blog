@@ -17,7 +17,15 @@ Kubernetes master (control pane) contains following components:
 
 - Scheduler: component responsible for allocating physical resources necessary to run the application.
 
+<h3>Kubernetes worker: components</h3>
 
+The Kubernetes worker (nodes) instances main functionality is to process instructions from master and execute them on node. Key components are:
+
+- Kubelet: monitoring that scheduled by master containers on specific node are running and healthy.
+
+- Container runtime: software responsible for running containers. Each node uses container runtime to run scheduled by master containerized apps. Non containerized apps not supported by Kubernetes.
+
+- Kube proxy: maintains network rules on worker and does connection forwarding.
 
 
 
