@@ -9,6 +9,20 @@ categories: jekyll update
 
 EKS is a service offered by Amazon to run Kubernetes on AWS without need for a user to run Kubernetes control plane. EKS is fully managed by Amazon. It has similar functionality: automatic deployment, scaling and management of containerized applications. EKS features extremely high availability due to implementation of Kubernetes instances across multiple Availability Zones. AWS EKS easily can be integrated with other AWServices to maintain scalable and secured applications.
 
+<h3>AWS EKS Control Plane Architecture</h3>
+
+For every cluster, AWS EKS control plane runs with single tenant Kubernetes control plane, and it can not be shared as resource with other AWS accounts and EKS clusters. Architectural componenets are (minimum): two API server nodes and three "etcd" nodes (distributed key-value store) running in three Availability Zones presented in Region. To maintain high security for running EKS clusters, AWS EKS restricts viewing and receiving ant communication (by implementation of Amazon VPC policies) from other clusters or AWS accounts (with exception to entities authorized by Kubernetes RBAC policy).
+
+<h3>Start AWS EKS:</h3>
+
+    Step 1: Create AWS EKS cluster (using AWS console, or AWS CLI, or any AWS SDKs)
+    Step 2: Launch worker node(s), register with AWS EKS cluster
+    Step 3: Configure worker nodes (use AWS CludFormation temlate for automation process)
+    Step 4: Configure cluster
+    Step 5: Deploy and manage apps on EKS cluster
+
+
+
 
 
 
