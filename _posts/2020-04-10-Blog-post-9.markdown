@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Blog 9: AWS EKS "
+date:   2020-04-10 18:00:18 -0000
+categories: jekyll update
+---
+
+<h2>Blog post is cooking</h2>
+
+
+
+
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
