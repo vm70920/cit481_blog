@@ -5,7 +5,9 @@ date:   2020-04-10 18:00:18 -0000
 categories: jekyll update
 ---
 
-<h2>Blog post is cooking</h2>
+<h2>AWS EKS: Elastic Kubernetes Service</h2>
+
+EKS is a service offered by Amazon to run Kubernetes on AWS without need for a user to run Kubernetes control plane. EKS is fully managed by Amazon. It has similar functionality: automatic deployment, scaling and management of containerized applications. EKS features extremely high availability due to implementation of Kubernetes instances across multiple Availability Zones. AWS EKS easily can be integrated with other AWServices to maintain scalable and secured applications.
 
 
 
