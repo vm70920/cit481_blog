@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Blog 10: AWS EKS (continued)"
+date:   2020-04-17 18:00:18 -0000
+categories: jekyll update
+---
+
+<h2>AWS EKS: Elastic Kubernetes Service</h2>
+
+
+
+
+
+
+
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
