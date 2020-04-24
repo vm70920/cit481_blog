@@ -49,7 +49,19 @@ To create Amazon EKS cluster with Linux workloads, by using eksctl tool:
     --ssh-access \
     --ssh-public-key pub-key.pub \
 
+It may take up to 15 minutes to provision cluster. To check configuration of ready to use cluster:
 
+    kubectl get svc
+
+Cluster is ready now for deploying applications. Also, there are some add-ons available for use with Kubernetes:
+
+  - cluster autoscaler: automatically adjust number of nodes.
+  - guest book application: simple guest book app to test cluster (Linux workload)
+  - windows sample app: app to test cluster with Windows workload
+  - Kubernetes dashboard: deploy web based user interface
+  - Helm for AWS EKS: helps to install and manage apps on cluster
+  - Kubernetes Metrics server: is an agregator of data and resource usage in clusters
+  - Prometheus: deployment of control plane metrics with help of helm package manager
 
 
 
