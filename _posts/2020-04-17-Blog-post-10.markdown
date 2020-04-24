@@ -7,7 +7,7 @@ categories: jekyll update
 
 <h2>AWS EKS: Elastic Kubernetes Service</h2>
 
-This post is continue of the previouse post.
+This post is continue of the previous post.
 Next step will be to install kubectl, a command line utility that Kubernetes uses to communicate with cluster API server. To install kubectl on Linux:
 
 Download binaries (for Kubernetes v.1.15):
@@ -47,7 +47,7 @@ To create Amazon EKS cluster with Linux workloads, by using eksctl tool:
     --nodes-min 1 \
     --nodes-max 5 \
     --ssh-access \
-    --ssh-public-key pub-key.pub \
+    --ssh-public-key pub-key.pub
 
 It may take up to 15 minutes to provision cluster. To check configuration of ready to use cluster:
 
@@ -60,7 +60,7 @@ Cluster is ready now for deploying applications. Also, there are some add-ons av
   - windows sample app: app to test cluster with Windows workload
   - Kubernetes dashboard: deploy web based user interface
   - Helm for AWS EKS: helps to install and manage apps on cluster
-  - Kubernetes Metrics server: is an agregator of data and resource usage in clusters
+  - Kubernetes Metrics server: is an aggregator of data and resource usage in clusters
   - Prometheus: deployment of control plane metrics with help of helm package manager
 
 
