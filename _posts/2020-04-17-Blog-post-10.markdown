@@ -7,9 +7,34 @@ categories: jekyll update
 
 <h2>AWS EKS: Elastic Kubernetes Service</h2>
 
+This post is continue of the previouse post.
+Next step will be to install kubectl, a command line utility that Kubernetes uses to communicate with cluster API server. To install kubectl on Linux:
 
+Download binaries (for Kubernetes v.1.15):
 
+    curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.15.10/2020-02-22/bin/linux/amd64/kubectl
 
+To be secured, user may verify downloaded binaries with corresponding SHA-256 checksum for related binaries:
+
+    curl -o kubectl.sha256 https://amazon-eks.s3.us-west-2.amazonaws.com/1.15.10/2020-02-22/bin/linux/amd64/kubectl.sha256
+
+Get checksum for previously downloaded binaries:
+
+    openssl sha1 -sha256 kubectl
+
+Compare output of the last command with downloaded SHA-256 file. They must match to prove secured content of downloaded binaries.
+
+Next, copy binaries to folder in the PATH environmental variable.
+
+    mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin
+
+Also, to have kubectl configured when shell is opened, add the $HOME/bin path to shell initialization file:
+
+    echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
+
+Verify kubectl version:
+
+    kubectl version --short --client
 
 
 
