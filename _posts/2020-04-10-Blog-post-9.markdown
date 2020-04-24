@@ -11,15 +11,34 @@ EKS is a service offered by Amazon to run Kubernetes on AWS without need for a u
 
 <h3>AWS EKS Control Plane Architecture</h3>
 
-For every cluster, AWS EKS control plane runs with single tenant Kubernetes control plane, and it can not be shared as resource with other AWS accounts and EKS clusters. Architectural componenets are (minimum): two API server nodes and three "etcd" nodes (distributed key-value store) running in three Availability Zones presented in Region. To maintain high security for running EKS clusters, AWS EKS restricts viewing and receiving ant communication (by implementation of Amazon VPC policies) from other clusters or AWS accounts (with exception to entities authorized by Kubernetes RBAC policy).
+For every cluster, AWS EKS control plane runs with single tenant Kubernetes control plane, and it can not be shared as resource with other AWS accounts and EKS clusters. Architectural components are (minimum): two API server nodes and three "etcd" nodes (distributed key-value store) running in three Availability Zones presented in Region. To maintain high security for running EKS clusters, AWS EKS restricts viewing and receiving ant communication (by implementation of Amazon VPC policies) from other clusters or AWS accounts (with exception to entities authorized by Kubernetes RBAC policy).
 
 <h3>Start AWS EKS:</h3>
 
-    Step 1: Create AWS EKS cluster (using AWS console, or AWS CLI, or any AWS SDKs)
+    Step 1: Create AWS EKS cluster (using eksctl, AWS console, or AWS CLI, or any AWS SDKs)
     Step 2: Launch worker node(s), register with AWS EKS cluster
-    Step 3: Configure worker nodes (use AWS CludFormation temlate for automation process)
+    Step 3: Configure worker nodes (use AWS CludFormation template for automation process)
     Step 4: Configure cluster
     Step 5: Deploy and manage apps on EKS cluster
+
+<h3>Start EKS with eksctl</h3>
+
+An eksctl is a command line tool for creating and managing Kubernetes on Amazon EKS. As a prerquisite AWS CLI must be installed, or being updated up to an current version, prior to using of eksctl. System's Python must be 2.7.9 or later.
+
+AWS CLI recently was released with version 2. AWS CLI version 1 is no longer supported. It is recomended by AWS to unistall AWS CLI v.1 and use only AWS CLI v.2.
+
+To install or upgrade eks ctl on Linux:
+
+    curl --silent --location "https://github.com/weaveworks/eksctl/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /template
+
+Then move binaries to:
+
+    sudo mv /tmp/eksctl/ /usr/local/binaries
+
+Check installation results (version should be no lower than 0.17.0):
+
+    eksctl version
+
 
 
 
