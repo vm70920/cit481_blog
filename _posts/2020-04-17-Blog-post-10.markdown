@@ -36,6 +36,20 @@ Verify kubectl version:
 
     kubectl version --short --client
 
+To create Amazon EKS cluster with Linux workloads, by using eksctl tool:
+
+    eksctl create cluster \
+    --name My_project_cluster \
+    --region us-west-2 \
+    --nodegroup-name web-server-workers \
+    --node-type t3.medium \
+    --nodes 5 \
+    --nodes-min 1 \
+    --nodes-max 5 \
+    --ssh-access \
+    --ssh-public-key pub-key.pub \
+
+
 
 
 
