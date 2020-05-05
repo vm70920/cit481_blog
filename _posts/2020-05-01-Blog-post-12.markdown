@@ -1,10 +1,15 @@
 ---
 layout: post
-title:  "Blog 12: Jenkins"
+title:  "Blog 12: CI/CD: Jenkins"
 date:   2020-05-01 18:00:18 -0000
 categories: jekyll update
 ---
 
+Jenkins
+
+Continuous integration (CI) and Continuous delivery (CD) are conjunction of operating principles and practices in the area of application development, and particularly to deliver changes of program code more reliably and frequently. CI/CD philosophy allows to increase quality of code by automating deployment steps.
+
+Continuous integration assumes that development team will perform small changes in code, then check changes in to a version control repository. CI establishing automated way for building, packaging, and testing applications, with high degree of consistency. CI also allows to commit changes more often (high frequency), which improves collaboration and quality of the software.
 
 
 
