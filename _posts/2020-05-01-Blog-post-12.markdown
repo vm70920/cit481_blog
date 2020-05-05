@@ -5,13 +5,18 @@ date:   2020-05-01 18:00:18 -0000
 categories: jekyll update
 ---
 
-Jenkins
+CI/CD: Jenkins
 
 Continuous integration (CI) and Continuous delivery (CD) are conjunction of operating principles and practices in the area of application development, and particularly to deliver changes of program code more reliably and frequently. CI/CD philosophy allows to increase quality of code by automating deployment steps.
 
 Continuous integration assumes that development team will perform small changes in code, then check changes in to a version control repository. CI establishing automated way for building, packaging, and testing applications, with high degree of consistency. CI also allows to commit changes more often (high frequency), which improves collaboration and quality of the software.
 
 Continuous development follows continuous integration, and automates delivery of applications to specified environment. All this allows teams to perform simultaneously in multiple environments, such as development, testing, and production.
+
+CI/CD software application holds specific parameters of environment, then upon receiving new changes in programming code of application, CI/CD server performs continuous testing. Upon completion of testing phase, CI/CD server performs necessary service calls to remote servers and databases, to deploy application and trigger necessary procedures and restarts.
+
+Jenkins is one of the software applications that allows to implement continuous integration and continuous delivery principles in the process of building, testing and deploying software. Jenkins is a server based application 
+
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
