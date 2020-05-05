@@ -11,7 +11,7 @@ Continuous integration (CI) and Continuous delivery (CD) are conjunction of oper
 
 Continuous integration assumes that development team will perform small changes in code, then check changes in to a version control repository. CI establishing automated way for building, packaging, and testing applications, with high degree of consistency. CI also allows to commit changes more often (high frequency), which improves collaboration and quality of the software.
 
-
+Continuous development follows continuous integration, and automates delivery of applications to specified environment. All this allows teams to perform simultaneously in multiple environments, such as development, testing, and production.
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
