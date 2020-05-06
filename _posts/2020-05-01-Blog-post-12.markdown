@@ -5,7 +5,7 @@ date:   2020-05-01 18:00:18 -0000
 categories: jekyll update
 ---
 
-CI/CD: Jenkins
+<h3>CI/CD: Jenkins</h3>
 
 Continuous integration (CI) and Continuous delivery (CD) are conjunction of operating principles and practices in the area of application development, and particularly to deliver changes of program code more reliably and frequently. CI/CD philosophy allows to increase quality of code by automating deployment steps.
 
@@ -23,7 +23,7 @@ Main features:
   - easy installation, easy configuration - ready to run after installation, supports Windows, Mac OS X, and Unix like OS. Provides embedded error checker, and build in help.
   - distributed - Jenkins able to distribute builds, tests, and deployments across multiple platforms and multiple machines
 
-<h2>Installing Jenkins on Mac OS, LInux</h2>
+<h2>Installing Jenkins on Mac OS, Linux</h2>
 
 
 
