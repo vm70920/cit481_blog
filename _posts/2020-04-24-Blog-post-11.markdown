@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  "Blog 11: "
+title:  "Blog 11: Puppet"
 date:   2020-04-24 18:00:18 -0000
 categories: jekyll update
 ---
 
+<h3>Puppet</h3>
+
+Puppet is a systems management tool for centralizing and automating the configuration management process. Puppet software allows to configure, manage, deploy, and orchestrate applications and services at specified infrastructure. Puppet was designed to manage the configuration of Linux and Windows OSs. Puppet written in Ruby and uses Domain Specific Language (DSL) to describe system configuration.
+
+There are two versions of Puppet:
+
+    - Open Source Puppet - a basic version, also known as Open Source Puppet, available at Puppet's website and licensed under the Apache 2.0
+
+    - Puppet Enterprise - commercial version with features like compliance reporting, orchestration, role-based access control, GUI, API and command line tools to manage nodes
+
+Puppet functionality:
+
+    - define distinct configurations for every host
+    - continuously monitor servers to confirm that desired configuration exists or not, and is not altered. In case if configuration was changed, Puppet will revert configuration to pre-existing conditions
+    - provides centralized control over configured system, thus applied changes gets automatically effected
+    - automatically deploys software to configured systems, and implements infrastructure as a code
 
 
 
