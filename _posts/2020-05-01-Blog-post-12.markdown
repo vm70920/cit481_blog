@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog 12: CI/CD -- Jenkins"
+title:  "Blog 12: CI/CD, meet Jenkins"
 date:   2020-05-01 18:00:18 -0000
 categories: jekyll update
 ---
@@ -15,7 +15,17 @@ Continuous development follows continuous integration, and automates delivery of
 
 CI/CD software application holds specific parameters of environment, then upon receiving new changes in programming code of application, CI/CD server performs continuous testing. Upon completion of testing phase, CI/CD server performs necessary service calls to remote servers and databases, to deploy application and trigger necessary procedures and restarts.
 
-Jenkins is one of the software applications that allows to implement continuous integration and continuous delivery principles in the process of building, testing and deploying software. Jenkins is a server based application 
+Jenkins is one of the software applications that allows to implement continuous integration and continuous delivery principles in the process of building, testing and deploying software. Jenkins is a server based application which runs on servlet containers, for instance Apache Tomcat.
+
+Main features:
+
+  - extensible automation servers = can be used as solely CI server, or CD hub. Can be extended by using plugins
+  - easy installation, easy configuration - ready to run after installation, supports Windows, Mac OS X, and Unix like OS. Provides embedded error checker, and build in help.
+  - distributed - Jenkins able to distribute builds, tests, and deployments across multiple platforms and multiple machines
+
+<h2>Installing Jenkins on Mac OS, LInux</h2>
+
+
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
