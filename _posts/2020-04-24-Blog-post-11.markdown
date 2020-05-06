@@ -11,16 +11,16 @@ Puppet is a systems management tool for centralizing and automating the configur
 
 There are two versions of Puppet:
 
-    - Open Source Puppet - a basic version, also known as Open Source Puppet, available at Puppet's website and licensed under the Apache 2.0
+  - Open Source Puppet - a basic version, also known as Open Source Puppet, available at Puppet's website and licensed under the Apache 2.0
 
-    - Puppet Enterprise - commercial version with features like compliance reporting, orchestration, role-based access control, GUI, API and command line tools to manage nodes
+  - Puppet Enterprise - commercial version with features like compliance reporting, orchestration, role-based access control, GUI, API and command line tools to manage nodes
 
 Puppet functionality:
 
-    - define distinct configurations for every host
-    - continuously monitor servers to confirm that desired configuration exists or not, and is not altered. In case if configuration was changed, Puppet will revert configuration to pre-existing conditions
-    - provides centralized control over configured system, thus applied changes gets automatically effected
-    - automatically deploys software to configured systems, and implements infrastructure as a code
+  - define distinct configurations for every host
+  - continuously monitor servers to confirm that desired configuration exists or not, and is not altered. In case if configuration was changed, Puppet will revert configuration to pre-existing conditions
+  - provides centralized control over configured system, thus applied changes gets automatically effected
+  - automatically deploys software to configured systems, and implements infrastructure as a code
 
 
 
