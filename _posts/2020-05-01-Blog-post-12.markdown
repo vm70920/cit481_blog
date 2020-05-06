@@ -23,7 +23,31 @@ Main features:
   - easy installation, easy configuration - ready to run after installation, supports Windows, Mac OS X, and Unix like OS. Provides embedded error checker, and build in help.
   - distributed - Jenkins able to distribute builds, tests, and deployments across multiple platforms and multiple machines
 
-<h2>Installing Jenkins on Mac OS, Linux</h2>
+<h2>Installing Jenkins on Mac OS, Linux (via Docker platform)</h2>
+
+Create a bridge network in Docker:
+
+    docker network create jenkins
+
+Create volumes to share the Docker client TLS certificates needed to connect to the Docker daemon and persist the Jenkins data:
+
+    docker volume create jenkins-docker-certs
+    docker volume create jenkins-data
+
+To execute Docker commands inside Jenkins nodes, download and run the docker:dind Docker image:
+
+    docker container run \
+      --name jenkins-docker \
+      --rm \
+      --detach \
+      --privileged \
+      --network jenkins \
+      --network-alias docker \
+      --env DOCKER_TLS_CERTDIR=/certs \
+      --volume jenkins-docker-certs:/certs/client \
+      --volume jenkins-data:/var/jenkins_home \
+      --publish 2376:2376 \
+      docker:dind
 
 
 
