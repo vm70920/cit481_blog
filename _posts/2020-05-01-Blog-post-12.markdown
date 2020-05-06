@@ -65,7 +65,7 @@ Download the jenkinsci/blueocean image and run it as a container in Docker:
       --volume jenkins-docker-certs:/certs/client:ro \
       jenkinsci/blueocean
 
-Next step, to proceed with post installation wizard: https://www.jenkins.io/doc/book/installing/#setup-wizard
+Next step, to proceed with post installation wizard: <a href="https://www.jenkins.io/doc/book/installing/#setup-wizard">link</a>
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
