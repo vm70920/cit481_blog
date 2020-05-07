@@ -39,17 +39,48 @@ In Puppet, the master is a Linux based machine with master software installed on
 
 The communication between master and agent is established through secure certificates. Communication steps are:
 
-Step 1: Establish communication channel via secure certificates:
+Step 1: Establish communication channel via secure certificates.
 
 <html>
    <body>
       <a>
-         <img alt="Qries" src="https://www.guru99.com/images/1/040419_0544_PuppetTutor5.jpg"
+         <img alt="step 1" src="https://www.guru99.com/images/1/040419_0544_PuppetTutor5.jpg"
          width="500" height="350">
       </a>
    </body>
 </html>
 
+Step 2: Puppet agent sends the data, called Facts (hostname, kernel details, IP address, file name details, etc.) about its current state to the Puppet master server.
+<html>
+   <body>
+      <a>
+         <img alt="step 2" src="https://www.guru99.com/images/1/040419_0544_PuppetTutor6.jpg"
+         width="500" height="350">
+      </a>
+   </body>
+</html>
+
+Step 3: Master uses Facts and compiles a list (called Catalog) with updates of configuration to be applied to agent. For instance, list may include package installation, upgrades or removals, File System creation, user creation or deletion, server reboot, IP configuration changes, etc.
+<html>
+   <body>
+      <a>
+         <img alt="step 3" src="https://www.guru99.com/images/1/040419_0544_PuppetTutor7.jpg"
+         width="500" height="350">
+      </a>
+   </body>
+</html>
+
+Step 4: Agent uses Catalog of configuration to apply any required updates and changes on the node.
+<html>
+   <body>
+      <a>
+         <img alt="step 4" src="https://www.guru99.com/images/1/040419_0544_PuppetTutor8.jpg"
+         width="500" height="350">
+      </a>
+   </body>
+</html>
+
+Step 5: Agent node reports back to master notifying that the configuration been applied and completed.
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
