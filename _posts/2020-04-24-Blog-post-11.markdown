@@ -27,7 +27,7 @@ Puppet uses declarative programming approach: expressing logic of computation (w
   <html>
      <body>
         <a href="https://www.qries.com/">
-           <img alt="Qries" src="https://www.guru99.com/images/1/040419_0544_PuppetTutor4.jpg"
+           <img alt="useradd" src="https://www.guru99.com/images/1/040419_0544_PuppetTutor4.jpg"
            width="280" height="150">
         </a>
      </body>
