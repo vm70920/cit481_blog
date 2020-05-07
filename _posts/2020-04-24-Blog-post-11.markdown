@@ -22,7 +22,8 @@ Puppet functionality:
   - provides centralized control over configured system, thus applied changes gets automatically effected
   - automatically deploys software to configured systems, and implements infrastructure as a code
 
-
+  <img alt="Qries" src="https://www.guru99.com/images/1/040419_0544_PuppetTutor4.jpg"
+           width=150" height="70">
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
