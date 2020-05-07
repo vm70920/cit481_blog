@@ -22,6 +22,7 @@ Puppet functionality:
   - provides centralized control over configured system, thus applied changes gets automatically effected
   - automatically deploys software to configured systems, and implements infrastructure as a code
 
+Puppet uses declarative programming approach: expressing logic of computation (what to do) and  omitting description of control flow (how to do it). For instance, following picture depicts declarative programming approach in creation of user (using Puppet domain specific language).
 
   <html>
      <body>
@@ -31,6 +32,8 @@ Puppet functionality:
         </a>
      </body>
   </html>
+
+Puppet is using pull deployment model, when agent nodes every 1800 seconds calls master node to see if there are updates and anything needs to be updated. If new update present then agent pulls puppet code from the master and performs required actions. In Puppet, the master is a Linux based machine with master software installed on it, and responsible for maintaining configs specified in puppet codes. The Puppet master node can be only Linux. Puppet agents are target machines managed by agent with installed agent software. Puppet agent can be configured as supported operating system: Linux, Windows, Solaris, or Mac OS. The communication between master and agent is established through secure certificates.
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
