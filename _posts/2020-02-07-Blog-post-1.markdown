@@ -39,8 +39,6 @@ There are large number of Kubernetes abstract objects. Here are examples of some
 
 - Service: abstraction that defines policies to access pods. Kubernetes Service has stable IP address (unlike actual pod). Service keeps track of all pods and identifies targeted pods. Server receives user's request for specific functionality, and redirects request to specific active pod's IP address.
 
-- 
-
 
 
 
