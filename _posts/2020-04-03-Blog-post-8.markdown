@@ -1,14 +1,54 @@
 ---
 layout: post
-title:  "Blog 8:  "
+title:  "Blog 8: AWS Elastic Beanstalk"
 date:   2020-04-03 18:00:18 -0000
 categories: jekyll update
 ---
 
-<h2>Coming soon...</h2>
+<h2>AWS Elastic Beanstalk</h2>
 
- 
+ AWS Elastic Beanstalk allows to deploy applications, websites, mobile apps, and other services. Elastic Beanstalk handles security concern, scaling (server auto scaling), networking infrastructure, load balancers, and any necessary architecture  needed to run application or service, etc.
 
+<h3>Benefits of AWS Elastic Beanstalk:</h3>
+
+ - Easy to start with: easy way to upload application to Beanstalk, and keep it running on platform that can be created on user's local system and uploaded along with app.
+ - Auto scaling options: Beanstalk managing process of scaling up or down whenever workload is required to do so (if application’s traffic increases or decreases, Beanstalk automatically scales it)
+ - Developer productivity: less workload for developers in online uploading of updated versions of application, so they can concentrate to make app more secure, efficient, and userfriendly
+ - Customization: Beanstalk allows to select pre-existing configuration of AWS services. Also, if needed user may take control of some services manually
+ - Cost-effective: there is no cost involved in creating a Beanstalk environment
+ - Management and updates: AWS takes care of software patches, platform updates, and the infrastructure management
+
+<h3>Beanstalk command line interface (EB CLI)</h3>
+
+The EB CLI provides interactive commands that simplify creating, updating and monitoring environments from a local repository. EB CLI is useful in everyday development and testing cycle as an alternative to the Elastic Beanstalk console.
+
+<h3>To install EB CLI (Linux):</h3>
+
+Run following command:
+
+    pip install awsebcli --upgrade --user
+
+Add path to exec file to PATH variable, and modify PATH variable:
+
+    ~/.local/bin
+    export PATH=LOCAL_PATH:$PATH
+    source ~/PROFILE_SCRIPT
+
+Verify correct installation of EB CLI:
+
+    eb --versions
+
+Upgrade EB CLI:
+
+    pip install awsebcli --upgrade --user
+
+To initialize and configure project directory:
+
+    eb init
+
+To create environment:
+
+    eb create testing_environment
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
